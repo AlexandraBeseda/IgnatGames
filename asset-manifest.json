@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/IgnatGames/static/css/main.f6f40d41.chunk.css",
+    "main.js": "/IgnatGames/static/js/main.bf34176d.chunk.js",
+    "main.js.map": "/IgnatGames/static/js/main.bf34176d.chunk.js.map",
+    "runtime-main.js": "/IgnatGames/static/js/runtime-main.08a8a6c5.js",
+    "runtime-main.js.map": "/IgnatGames/static/js/runtime-main.08a8a6c5.js.map",
+    "static/js/2.2b6f6256.chunk.js": "/IgnatGames/static/js/2.2b6f6256.chunk.js",
+    "static/js/2.2b6f6256.chunk.js.map": "/IgnatGames/static/js/2.2b6f6256.chunk.js.map",
+    "index.html": "/IgnatGames/index.html",
+    "static/css/main.f6f40d41.chunk.css.map": "/IgnatGames/static/css/main.f6f40d41.chunk.css.map",
+    "static/js/2.2b6f6256.chunk.js.LICENSE.txt": "/IgnatGames/static/js/2.2b6f6256.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08a8a6c5.js",
+    "static/js/2.2b6f6256.chunk.js",
+    "static/css/main.f6f40d41.chunk.css",
+    "static/js/main.bf34176d.chunk.js"
+  ]
+}
