@@ -1,0 +1,13 @@
+.someClass {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.element {
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+}

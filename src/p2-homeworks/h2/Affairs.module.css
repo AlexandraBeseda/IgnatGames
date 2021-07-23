@@ -1,0 +1,15 @@
+.buttons{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-around;
+
+
+}
+.element{
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+}

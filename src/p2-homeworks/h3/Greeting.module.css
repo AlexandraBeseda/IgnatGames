@@ -1,0 +1,20 @@
+.greeting {
+margin: 10px;
+}
+
+.someClass {
+    color: #4d5156;
+    background-color: #21aeff;
+
+}
+
+.error {
+    color: red;
+    height: 30px;
+
+}
+
+.button{
+    width: 180px;
+    background: #bbfbbc;
+}
