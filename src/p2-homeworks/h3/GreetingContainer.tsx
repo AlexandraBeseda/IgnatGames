@@ -19,8 +19,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
 
         const isNameEmpty = e.currentTarget.value.trim();
+
+
+
+
         if (isNameEmpty) {//тру т.е. есть какие то буквы
             setName(isNameEmpty);
+
             setError('');//true чета там было до этого и установить пустое поле
         } else {
             setName('');
@@ -30,12 +35,17 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 //замыкание ---- ничего передавать не надо
     //мы берем значение из usestate
     const addUser = () => {
-        addUserCallback(name);
-        alert(`Hello  ${name}!`) // need to fix
-        setName('');
+        if (name) {
+            addUserCallback(name);
+            alert(`Hello  ${name}!`) // need to fix
+            setName('');
+        }else {
+            setError("Вы ничего не ввели!")
+        }
     }
 
     const totalUsers = users.length; // need to fix
+
 
     return (
         <Greeting

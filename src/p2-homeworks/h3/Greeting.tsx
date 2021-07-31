@@ -7,6 +7,7 @@ type GreetingPropsType = {
     addUser: () => void// need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
+
 }
 
 // презентационная компонента (для верстальщика)
@@ -20,7 +21,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <input value={name} onChange={setNameCallback} className={inputClass}/>
             <div className={s.error}>{error}</div>
             <div>
-                <button onClick={addUser} className={s.button}>add</button>
+                <button onClick={addUser} className={s.button} >add</button>
             </div>
 
             <div>{totalUsers}</div>
