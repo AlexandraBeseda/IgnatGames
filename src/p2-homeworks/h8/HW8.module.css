@@ -1,0 +1,10 @@
+.listNameAge {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: 5px;
+}
+
+.buttons{
+    display: flex;
+}

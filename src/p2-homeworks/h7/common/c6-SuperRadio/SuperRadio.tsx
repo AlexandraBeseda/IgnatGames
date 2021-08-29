@@ -1,4 +1,5 @@
-import React, {ChangeEvent, InputHTMLAttributes, DetailedHTMLProps} from 'react'
+import React, {ChangeEvent, InputHTMLAttributes, DetailedHTMLProps} from 'react';
+import s from "./SuperRadio.module.css"
 
 type DefaultRadioPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
@@ -16,24 +17,33 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+        onChange && onChange(e);
+       onChangeOption && onChangeOption(e.currentTarget.value);
         // onChange, onChangeOption
     }
 
 
+    //тернарное выражение
+    //если options true тоггда мапить
+    //если false тогда вернуть пустой массив
     const mappedOptions: any[] = options ? options.map((o, i) => ( // map options with key
-        <label key={name + '-' + i}>
+        <label  key={name + '-' + i}>
             <input
                 type={'radio'}
+                name={name}
+                checked={o===value}
+                value={o}
                 // name, checked, value, onChange
+                onChange={onChangeCallback}
             />
             {o}
         </label>
     )) : []
 
     return (
-        <>
+        <div className={s.form_radio_btn}>
             {mappedOptions}
-        </>
+        </div>
     )
 }
 
