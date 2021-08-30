@@ -3,7 +3,7 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {loadingAC} from "./bll/loadingReducer";
 import {AppStoreType} from "./bll/store";
-// import loader from "./assets/images/Bean Eater-1s-200px.svg";
+import loader from "./assets/images/Spinner-1s-200px.svg";
 
 function HW10() {
     // useSelector, useDispatch
@@ -28,7 +28,7 @@ function HW10() {
             {loading
                 ? (
                     <div>
-                        {/*<img src={loader} alt={"loader"}/>*/}
+                        <img src={loader} alt={"loader"}/>
                     </div>
                 ) : (
                     <div>
