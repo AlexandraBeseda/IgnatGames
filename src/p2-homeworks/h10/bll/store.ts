@@ -4,7 +4,7 @@ import {ChangeThemeActionType, themeReducer} from "../../h12/bll/themeReducer";
 
 const reducers = combineReducers({
     loading: loadingReducer,
-    themeReducer:themeReducer,
+    themeReducer: themeReducer,
 
 })
 
@@ -13,7 +13,7 @@ export const store = createStore(reducers)
 
 export type AppStoreType = ReturnType<typeof reducers>
 
-export type ActionTypes=LoadingActionType|ChangeThemeActionType;
+export type ActionTypes = LoadingActionType | ChangeThemeActionType;
 
 // @ts-ignore
 window.store = store // for dev

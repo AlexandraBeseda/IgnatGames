@@ -3,7 +3,7 @@ const initState = {
 };
 
 
-export const themeReducer = (state: typeof initState = initState, action: any): typeof initState => { // fix any
+export const themeReducer = (state: typeof initState = initState, action: ChangeThemeActionType): typeof initState => { // fix any
     switch (action.type) {
         case "CHANGE_THEME": {
             return {...state, theme: action.newTheme};
