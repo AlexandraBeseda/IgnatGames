@@ -1,3 +1,33 @@
+.nava{
+    background: navajowhite;
+}
+
+.nava-text {
+    color: black;
+}
+
+
+
+
+.pink{
+    background: hotpink;
+}
+
+.pink-text {
+    color: yellow;
+}
+.yellow {
+    background: yellow;
+}
+
+.yellow-text {
+    color: gray;
+}
+
+
+
+
+
 .dark {
     background: dimgrey;
 }

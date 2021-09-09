@@ -1,4 +1,4 @@
-import {ActionTypes} from "./store";
+ import {ActionTypes} from "./store";
 
 const initState: InitialStateType = {
     isLoading: false,
