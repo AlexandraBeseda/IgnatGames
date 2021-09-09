@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/IgnatGames/static/css/main.416a43ae.chunk.css",
-    "main.js": "/IgnatGames/static/js/main.c3c76416.chunk.js",
-    "main.js.map": "/IgnatGames/static/js/main.c3c76416.chunk.js.map",
+    "main.css": "/IgnatGames/static/css/main.7d03017d.chunk.css",
+    "main.js": "/IgnatGames/static/js/main.8b1a6e66.chunk.js",
+    "main.js.map": "/IgnatGames/static/js/main.8b1a6e66.chunk.js.map",
     "runtime-main.js": "/IgnatGames/static/js/runtime-main.4b9c2486.js",
     "runtime-main.js.map": "/IgnatGames/static/js/runtime-main.4b9c2486.js.map",
-    "static/js/2.11da8d00.chunk.js": "/IgnatGames/static/js/2.11da8d00.chunk.js",
-    "static/js/2.11da8d00.chunk.js.map": "/IgnatGames/static/js/2.11da8d00.chunk.js.map",
+    "static/js/2.1264a5af.chunk.js": "/IgnatGames/static/js/2.1264a5af.chunk.js",
+    "static/js/2.1264a5af.chunk.js.map": "/IgnatGames/static/js/2.1264a5af.chunk.js.map",
     "index.html": "/IgnatGames/index.html",
-    "static/css/main.416a43ae.chunk.css.map": "/IgnatGames/static/css/main.416a43ae.chunk.css.map",
-    "static/js/2.11da8d00.chunk.js.LICENSE.txt": "/IgnatGames/static/js/2.11da8d00.chunk.js.LICENSE.txt",
+    "static/css/main.7d03017d.chunk.css.map": "/IgnatGames/static/css/main.7d03017d.chunk.css.map",
+    "static/js/2.1264a5af.chunk.js.LICENSE.txt": "/IgnatGames/static/js/2.1264a5af.chunk.js.LICENSE.txt",
     "static/media/Spinner-1s-200px.7aee2325.svg": "/IgnatGames/static/media/Spinner-1s-200px.7aee2325.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4b9c2486.js",
-    "static/js/2.11da8d00.chunk.js",
-    "static/css/main.416a43ae.chunk.css",
-    "static/js/main.c3c76416.chunk.js"
+    "static/js/2.1264a5af.chunk.js",
+    "static/css/main.7d03017d.chunk.css",
+    "static/js/main.8b1a6e66.chunk.js"
   ]
 }
