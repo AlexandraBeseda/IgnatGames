@@ -28,9 +28,11 @@ export const Request = () => {
     return (
         <div>
             <SuperButton onClick={postNewSuccess}>Click</SuperButton>
-            <div>
+            <span>
                 <input checked={check} type="checkbox" name={"what?"} onChange={onChangeCheckbox}/>
+            </span>
+            <div>
+                {data}
             </div>
-            <div>{data}</div>
         </div>);
 }
