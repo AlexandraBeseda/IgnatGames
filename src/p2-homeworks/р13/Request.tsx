@@ -4,7 +4,8 @@ import {requestAPI} from "./api/RequestsAPI";
 
 export const Request = () => {
 
-    const [check, setCheck] = useState(false)
+    const [check, setCheck] = useState(false);
+    const [data, setData] = useState("");
     console.log(check)
 
     const onChangeCheckbox = (e: ChangeEvent<HTMLInputElement>) => {
@@ -12,13 +13,24 @@ export const Request = () => {
     }
 
     const postNewSuccess = () => {
-        requestAPI.createHW(check).then(response => console.log(response));
+        requestAPI.createHW(check)
+            .then(response => {
+                console.log(response.data);
+                setData(response.data.info)
+            })
+            .catch((error) => {
+                console.log({...error});
+                console.log(error.response ? error.response.data.errorText : error.message);
+                setData(error.response.data.errorText)
+            });
     }
 
-    return (<div>
-        <SuperButton onClick={postNewSuccess}>Click</SuperButton>
+    return (
         <div>
-            <input checked={check} type="checkbox" name={"what?"} onChange={onChangeCheckbox}/>
-        </div>
-    </div>);
+            <SuperButton onClick={postNewSuccess}>Click</SuperButton>
+            <div>
+                <input checked={check} type="checkbox" name={"what?"} onChange={onChangeCheckbox}/>
+            </div>
+            <div>{data}</div>
+        </div>);
 }
